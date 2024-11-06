@@ -1,0 +1,110 @@
+/* Đặt lại CSS mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+.news-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.news-section h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 1px solid #333;
+    display: flex;
+    flex-direction: column; /* Đảm bảo nội dung được sắp xếp theo chiều dọc */
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Cắt ảnh nếu cần để nó vừa với khung */
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.date {
+    font-size: 14px;
+    color: #bbb;
+    margin: 10px;
+    text-align: left; /* Căn lề trái */
+}
+
+.title {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-align: left; /* Căn lề trái */
+}
+
+.title:hover {
+    color: #fff; /* Màu khi người dùng di chuột vào */
+    text-decoration: underline; /* Gạch chân khi hover */
+}
+
+
+/* Footer */
+.footer {
+    background-color: #1e1e1e;
+    color: #ccc;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-menu {
+    margin-bottom: 20px;
+}
+
+.footer-menu a {
+    color: #ccc;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-menu a:hover {
+    color: #ff4040;
+}
+
+.footer-icons {
+    margin: 20px 0;
+}
+
+.footer-icons img {
+    width: 32px;
+    height: 32px;
+    margin: 0 10px;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    font-size: 13px;
+    color: #bbb;
+}
+

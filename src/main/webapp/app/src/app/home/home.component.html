@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Tin Tức</title>
+</head>
+<body>
+
+<app-navbar></app-navbar>
+
+<!-- Phần Tin tức -->
+<section class="news-section">
+  <h2>Tin tức</h2>
+  <div class="news-grid">
+    <div class="news-item">
+        <a [routerLink]="['/detail']" [queryParams]="{ newsid: 1 }">
+          <img [src]="imagePaths.tt1" alt="News 1">
+        </a>
+        <div class="news-content">
+          <p class="date">03/10/2024</p>
+          <a [routerLink]="['/detail']" [queryParams]="{ newsid: 1 }" class="title">Chương trình phim kỉ niệm nhân dịp 70 năm Giải phóng Thủ đô</a>
+        </div>
+      </div>
+      
+      <div class="news-item">
+        <a [routerLink]="['/detail']" [queryParams]="{ newsid: 2 }">
+          <img [src]="imagePaths.tt2" alt="News 2">
+        </a>
+        <p class="date">13/09/2024</p>
+        <a [routerLink]="['/detail']" [queryParams]="{ newsid: 2 }" class="title">VUI TẾT TRUNG THU - RINH QUÀ VI VU</a>
+      </div>
+      <div class="news-item">
+        <a [routerLink]="['/detail']" [queryParams]="{ newsid: 3 }">
+          <img [src]="imagePaths.tt3" alt="News 3">
+        </a>
+        <div class="news-content">
+          <p class="date">09/09/2024</p>
+          <a [routerLink]="['/detail']" [queryParams]="{ newsid: 3 }" class="title">
+            Chương trình "Suất chiếu đặc biệt" tại Trung tâm Chiếu phim Quốc gia
+          </a>
+        </div>
+      </div>
+      
+      <div class="news-item">
+        <a [routerLink]="['/detail']" [queryParams]="{ newsid: 4 }">
+          <img [src]="imagePaths.tt4" alt="News 4">
+        </a>
+        <div class="news-content">
+          <p class="date">04/09/2024</p>
+          <a [routerLink]="['/detail']" [queryParams]="{ newsid: 4 }" class="title">
+            SUẤT CHIẾU ĐẶC BIỆT - QUÀ TẶNG TƯNG BỪNG - GIÁ VÉ KHÔNG ĐỔI
+          </a>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-menu">
+    <a href="#">Chính sách</a>
+    <a href="#">Lịch chiếu</a>
+    <a href="#">Tin tức</a>
+    <a href="#">Giá vé</a>
+    <a href="#">Hỏi đáp</a>
+    <a href="#">Liên hệ</a>
+  </div>
+  <div class="footer-icons">
+    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+      <img [src]="imagePaths.facebook" alt="Facebook">
+    </a>
+    <a href="https://zalo.me" target="_blank" aria-label="Zalo">
+      <img [src]="imagePaths.zalo" alt="Zalo">
+    </a>
+    <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+      <img [src]="imagePaths.youtube" alt="YouTube">
+    </a>
+    <a href="https://play.google.com" target="_blank" aria-label="Google Play">
+      <img [src]="imagePaths.googleplay" alt="Google Play">
+    </a>
+    <a href="https://www.apple.com/app-store/" target="_blank" aria-label="App Store">
+      <img [src]="imagePaths.appstore" alt="App Store">
+    </a>
+    <a href="https://moit.gov.vn/" target="_blank" aria-label="Bộ Công Thương">
+      <img [src]="imagePaths.certification" alt="Đã thông báo Bộ Công Thương">
+    </a>
+  </div>
+
+  <div class="footer-info">
+    <p>Cơ quan chủ quản: BỘ VĂN HÓA, THỂ THAO VÀ DU LỊCH</p>
+    <p>Bản quyền thuộc Trung tâm Chiếu phim Quốc gia.</p>
+    <p>Giấy phép số: 224/GP- TTĐT ngày 31/8/2010 - Chịu trách nhiệm: Vũ Đức Tùng - Giám đốc.</p>
+    <p>Địa chỉ: 87 Láng Hạ, Quận Ba Đình, Tp. Hà Nội - Điện thoại: 024.35141791</p>
+    <p>Copyright 2023. NCC All Rights Reserved. Dev by Anvui.vn</p>
+  </div>
+</footer>
+
+</body>
+</html>

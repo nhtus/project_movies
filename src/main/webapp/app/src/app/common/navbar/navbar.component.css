@@ -1,0 +1,40 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: AccentColor;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.menu a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu .active {
+    color: #ff4040;
+}
+
+.register {
+    background-color: #555;
+    color: #fff;
+}
+
+.login {
+    background-color: #ff4040;
+    color: #fff;
+}
+
+.logo img {
+    width: 80px;
+}
